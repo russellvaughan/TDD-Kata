@@ -12,6 +12,10 @@ describe StringCalculator do
 			 expect(calculator.integer_add("4")).to eq(4)
 			end
 
+			it 'will return the sum of two integers when passed them in a string' do 
+			expect(calculator.integer_add("3,4")).to eq(7)
+			end
+
 		end
 
 end
